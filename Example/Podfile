@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'zzurlimages_Example' do
+  pod 'zzurlimages', :path => '../'
+
+  target 'zzurlimages_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
