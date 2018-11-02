@@ -1,0 +1,6 @@
+framework module ZZPromises {
+  umbrella header "ZZPromises-umbrella.h"
+
+  export *
+  module * { export * }
+}

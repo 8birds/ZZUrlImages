@@ -1,0 +1,6 @@
+framework module ZZUrlImages {
+  umbrella header "ZZUrlImages-umbrella.h"
+
+  export *
+  module * { export * }
+}

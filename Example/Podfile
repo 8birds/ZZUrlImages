@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'zzurlimages_Example' do
-  pod 'zzurlimages', :path => '../'
+  pod 'ZZUrlImages', :path => '../'
 
   target 'zzurlimages_Tests' do
     inherit! :search_paths

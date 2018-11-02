@@ -1,0 +1,23 @@
+PODS:
+  - ZZPromises (1.0.5)
+  - ZZUrlImages (1.0.1):
+    - ZZPromises (~> 1.0)
+
+DEPENDENCIES:
+  - ZZUrlImages (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ZZPromises
+
+EXTERNAL SOURCES:
+  ZZUrlImages:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZZPromises: ec141651badafc9e510f69f09ac3b57d73dbac32
+  ZZUrlImages: ad00a1e346ac08b7158c5606fd1692e0b805bef1
+
+PODFILE CHECKSUM: 0f1b1f57665a42f7b85537241e3f055a4903a1d0
+
+COCOAPODS: 1.5.3

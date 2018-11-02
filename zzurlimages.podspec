@@ -1,42 +1,25 @@
-#
-# Be sure to run `pod lib lint zzurlimages.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'zzurlimages'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of zzurlimages.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.name             = 'ZZUrlImages'
+  s.version          = '1.0.1'
+  s.summary          = 'Load images to UIButtons and UIImageViews from an NSURL or NSURLRequest.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ZZURLImageButton is a UIButton that accepts URLs for any of the button states.
+ZZURLImageView can be used similarly to load an image into the view.
+
+NSURLRequests can also be used when more fine-grained control is needed over the network request.
                        DESC
 
-  s.homepage         = 'https://github.com/Rick Kern/zzurlimages'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.homepage         = 'https://github.com/8birds/zzurlimages'
+  s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Rick Kern' => 'rick@8birdsvideo.com' }
-  s.source           = { :git => 'https://github.com/Rick Kern/zzurlimages.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/8birds/zzurlimages.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'zzurlimages/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'zzurlimages' => ['zzurlimages/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  s.dependency 'ZZPromises', '~> 1.0'
+  #s.dependency 'ZZDataStructures', :path => ../ZZDataStructures
 end
